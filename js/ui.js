@@ -43,6 +43,8 @@ function clearForm() {
 // Step 3: Create the populateForm function
 // TODO: Implement the populateForm function
 function populateForm(job) {
+
+
     // Populate the form fields with the data from the job object
 }
 
@@ -87,6 +89,16 @@ function addProjectBlock() {
 // Step 6: Create the getSkills and getProjects functions
 // TODO: Implement the getSkills function
 function getSkills() {
+
+    const skillInputs = document.querySelectorAll('.skill');
+    const skills = [];
+
+    skillInputs.forEach(input => {
+        skills.push(input.value);
+    });
+    
+    return skills;
+
     // Get all skill inputs and return an array of their values
 }
 

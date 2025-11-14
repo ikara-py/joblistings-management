@@ -29,10 +29,11 @@ function loadJobs() {
 
 function submitJob(e) {
     e.preventDefault();
+        // console.log("where am i");
 
-    if (!validateForm()) {
-        return;
-    }
+    // if (!validateForm()) {
+    //     return;
+    // }
 
     const id = document.getElementById('job-id').value;
     const companyName = document.getElementById('company-name').value;
@@ -59,7 +60,7 @@ function submitJob(e) {
         addJob(jobData);
     }
     
-    console.log(jobData);
+    console.log("i am here");
 
     loadJobs();
     clearForm();
